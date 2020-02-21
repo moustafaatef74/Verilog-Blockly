@@ -2627,20 +2627,6 @@ Blockly.Blocks['reg'] = {
   }
 };
 
-Blockly.Blocks['clock'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField(new Blockly.FieldLabelSerializable("Clock"), "Type")
-		.appendField(new Blockly.FieldNumber(1, 1, 32), "Bit")
-        .appendField(new Blockly.FieldTextInput("clk"), "Value");
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(40);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
 Blockly.Blocks['gate'] = {
   init: function() {
     this.appendDummyInput()

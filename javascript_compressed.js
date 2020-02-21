@@ -925,19 +925,6 @@ Blockly.JavaScript['reg'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['clock'] = function(block) {
-  var number_bit = block.getFieldValue('Bit');
-  var text_value = block.getFieldValue('Value');
-  // TODO: Assemble JavaScript into code variable.
-    if(number_bit == 1){
-	var code = 'clock '+ text_value +', ';
-	}
-	else{
-		var x = number_bit-1;
-		var code = 'clock ['+x+':0] '+ text_value +', ';
-	}
-  return code;
-};
 Blockly.JavaScript['gate'] = function(block) {
   var dropdown_gate = block.getFieldValue('Gate');
   var text_output = block.getFieldValue('Output');
