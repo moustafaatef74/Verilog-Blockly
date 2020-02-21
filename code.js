@@ -422,7 +422,7 @@ Code.init = function() {
            length: 3,
            colour: '#ccc',
            snap: true},
-       media: '../../media/',
+       media: 'media/',
        rtl: rtl,
        toolbox: toolboxXml,
        zoom:
